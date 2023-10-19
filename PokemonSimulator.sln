@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonSimulator", "PokemonSimulator\PokemonSimulator.csproj", "{14893F9A-2BDF-4CD1-9229-F4693D8F8EEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14893F9A-2BDF-4CD1-9229-F4693D8F8EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14893F9A-2BDF-4CD1-9229-F4693D8F8EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14893F9A-2BDF-4CD1-9229-F4693D8F8EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14893F9A-2BDF-4CD1-9229-F4693D8F8EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7DB9315-4045-4CE4-A19E-98DF9EF56165}
+	EndGlobalSection
+EndGlobal
