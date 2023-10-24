@@ -10,7 +10,6 @@ namespace PokemonSimulator.logic
         private Pokemon pokemon1;
         private Pokemon pokemon2;
         private Dictionary<Pokemon, double> pokemonHp = new Dictionary<Pokemon, double>();
-        private PokemonFightSummary result;
         private List<Attack> attacks = new List<Attack>();
 
         internal PokemonsFightSimulator()

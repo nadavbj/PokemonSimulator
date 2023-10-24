@@ -16,6 +16,7 @@ namespace PokemonSimulator.tests
             result.Winner.Name.Should().Be("omastar");
         }
 
+        // Grass type is sensitive to fire so the first move against it should be fire and not grass type
         [Fact]
         public async Task ChooseTheMostAppropriateMove()
         {
@@ -92,6 +93,8 @@ namespace PokemonSimulator.tests
             await simulator.Init(attacker,attacked);
             var move = await simulator.ChooseMoveAsync(attacker, attacked);
             move.Name.Should().Be("fire-punch");
+            move = await simulator.ChooseMoveAsync(attacker, attacked);
+            move.Name.Should().Be("vine-whip");
         }
     }
 }
