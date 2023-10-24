@@ -21,8 +21,7 @@ namespace PokemonSimulator.controllers
         [HttpGet("fight")]
         public async Task<string> GetAsync(string pokemon1, string pokemon2)
         {
-            IPokemonsFightSimulator pokemonsFightSimulator = new PokemonsFightSimulator();
-            var fight = await pokemonsFightSimulator.GetFightResultsAsync(pokemon1, pokemon2);
+            var fight = await PokemonsFightSimulator.SimulateFightAsync(pokemon1, pokemon2);
             var id = await fightsDB.AddFightAsync(fight);
             return $@" fight id for future use id { id}.
 {fight.GetDescription()}";
