@@ -6,7 +6,7 @@ namespace PokemonSimulator.logic
     {
 
         // Init local variables
-        private PokeApiClient pokeClient = new PokeApiClient();
+        private static PokeApiClient pokeClient = new PokeApiClient();
         private Pokemon pokemon1;
         private Pokemon pokemon2;
         private Dictionary<Pokemon, double> pokemonHp = new Dictionary<Pokemon, double>();
@@ -25,7 +25,6 @@ namespace PokemonSimulator.logic
 
         internal async Task Init(string pokemon1name, string pokemon2name)
         {
-            pokeClient = new PokeApiClient();
             pokemon1 = await pokeClient.GetResourceAsync<Pokemon>(pokemon1name);
             pokemon2 = await pokeClient.GetResourceAsync<Pokemon>(pokemon2name);
             pokemonHp = new Dictionary<Pokemon, double>();
